@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# CineList 🎥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CineList é uma aplicação web para gerenciar filmes, permitindo aos usuários explorar filmes populares, salvar seus favoritos e acessar informações detalhadas de cada título. 
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Home:**
+  - Lista os filmes em cartaz obtidos via API do TMDb.
+  - Permite acessar detalhes de cada filme.
+- **Detalhes do Filme:**
+  - Exibe informações detalhadas como título, sinopse e avaliação.
+  - Opção de salvar o filme na lista de favoritos.
+  - Link para buscar trailers no YouTube.
+- **Favoritos:**
+  - Exibe os filmes salvos pelo usuário.
+  - Permite excluir filmes da lista.
+- **Página de Erro 404:**
+  - Página amigável para rotas inexistentes, com link para voltar à lista de filmes.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**
+- **React Router DOM**
+- **Axios**
+- **React Toastify**
+- **CSS Modules**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estrutura do Projeto
 
-### `npm test`
+- **App.js:** Configura o contêiner principal e as rotas.
+- **Home:** Página inicial para listar os filmes em cartaz.
+- **Filme:** Página de detalhes de um filme específico.
+- **Favoritos:** Página para gerenciar a lista de filmes favoritos.
+- **Erro:** Página de erro 404.
+- **Header:** Componente para navegação no site.
+- **api.js:** Configuração do Axios para comunicação com a API do TMDb.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação
 
-### `npm run build`
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/cinelist.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Acesse o diretório do projeto:
+   ```bash
+   cd cinelist
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Execute a aplicação:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+5. Acesse no navegador:
+   ```
+   http://localhost:3000
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuração da API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Esta aplicação utiliza a API do TMDb para buscar informações de filmes. Certifique-se de substituir a chave da API em **api.js** com sua própria chave obtida no [site do TMDb](https://www.themoviedb.org/documentation/api).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Estrutura de Diretórios
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```plaintext
+src/
+├── components/
+│   └── Header
+├── pages/
+│   ├── Home
+│   ├── Filme
+│   ├── Favoritos
+│   └── Erro
+├── services/
+│   └── api.js
+├── App.js
+├── index.js
+├── index.css
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Desenvolvido por Yuri Teodoro**
